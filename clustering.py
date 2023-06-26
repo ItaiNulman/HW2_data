@@ -76,8 +76,15 @@ def visualize_results(data, labels, centroids, path):
     :param centroids: the final centroids of kmeans, as numpy array of shape (k, 2)
     :param path: path to save the figure to.
     """
-    pass
-    # plt.savefig(path)
+
+    plt.figure()
+    plt.scatter(data[:, 0], data[:, 1], c=labels)
+    plt.scatter(centroids[:, 0], centroids[:, 1], marker='*', s=100, c='white', edgecolors='black')
+    plt.xlabel('cnt')
+    plt.ylabel('hum')
+    plt.title('Results for kmeans with k=' + str(centroids.shape[0]))
+    plt.savefig(path)
+    plt.close()
 
 
 def dist(x, y):
@@ -85,7 +92,7 @@ def dist(x, y):
     Euclidean distance between vectors x, y
     :param x: numpy array of size n
     :param y: numpy array of size n
-    :return: the euclidean distance
+    :return: the Euclidean distance
     """
     res = 0
     for a, b in zip(x, y):

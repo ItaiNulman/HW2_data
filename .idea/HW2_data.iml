@@ -5,4 +5,7 @@
     <orderEntry type="jdk" jdkName="Remote Python 3.8.8 (sftp://student@ds2022s-0061.eastus.cloudapp.azure.com:22/home/student/.conda/envs/hw2_ds_env/bin/python)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
+  <component name="PyDocumentationSettings">
+    <option name="renderExternalDocumentation" value="true" />
+  </component>
 </module>
